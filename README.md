@@ -15,4 +15,4 @@ The required packages can be installed by running `pip install -r requirements.t
 For `ECG-FM` environment please refer the link [ECG-FM](https://github.com/bowang-lab/ECG-FM) and [fairseq-signals](https://github.com/Jwoo5/fairseq-signals).
 
 ## 🚀Quick Start
-In the `run.sh`, we provide shell scripts, and you can change the `--task_name` and `--num_class` to start running.
+In the `run.sh`, we provide shell scripts, and you can change the `--label`, `--task_name` and `--num_class` to start running.
