@@ -3,7 +3,7 @@ Official code for "EnECG: Efficient Ensemble Learning for Electrocardiogram Mult
 
 ## Struct of EnECG
 
-![architecture](https://github.com/yuhaoxu99/EnECG/img/EnECG.png)
+![architecture](https://github.com/yuhaoxu99/EnECG/tree/main/img/EnECG.png)
 
 ## Prepare Dataset
 Prepare ECG Data from [MIMIC-IV-ECG](https://physionet.org/content/mimic-iv-ecg/1.0/) and download our prepared [Subset Data and Label](https://drive.google.com/drive/folders/1IkHkwa0HUbxmieBHMPd-VRdYQJbKLm3P?usp=share_link).
