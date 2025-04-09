@@ -13,3 +13,6 @@ Download TEMPO and ECG-FM through [Checkpoints](https://drive.google.com/drive/f
 The required packages can be installed by running `pip install -r requirements.txt`.
 
 For `ECG-FM` environment please refer the link [ECG-FM](https://github.com/bowang-lab/ECG-FM) and [fairseq-signals](https://github.com/Jwoo5/fairseq-signals).
+
+## 🚀Quick Start
+In the `run.sh`, we provide shell scripts, and you can change the `--task_name` and `--num_class` to start running.
