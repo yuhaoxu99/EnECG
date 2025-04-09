@@ -3,6 +3,11 @@ Official code for "EnECG: Efficient Ensemble Learning for Electrocardiogram Mult
 
 ## Framework of EnECG
 
+The EnECG framework comprises three main steps. 
+\ding{172}~Because each pretrained foundation model $\left(M_1, M_2, \ldots, M_N\right)$ requires a specific input length, we downsample the ECG and feed it into the frozen model. We then add a FFN and fine-tune it to obtain $\left(M_{\phi1}, M_{\phi2}, \ldots, M_{\phi N}\right)$. 
+\ding{173}~To reduce training costs, we select a subset of ECG leads and input them into the Mixture of Experts (MoE), which outputs gating probabilities $W$. 
+\ding{174}~Finally, we ensemble the results via the weighted sum $\hat{y} = \sum_{i=1}^{N} W_i \hat{y}_i$.
+
 <div align="center">
   <img src="https://raw.githubusercontent.com/yuhaoxu99/EnECG/main/img/EnECG.png" alt="architecture" width="500"/>
   <p><i>Figure 1: The framework of EnECG.</i></p>
@@ -13,7 +18,7 @@ Prepare ECG Data from [MIMIC-IV-ECG](https://physionet.org/content/mimic-iv-ecg/
 
 We provide `.jsonl` file subset from the MIMIC-IV-ECG, along with the corresponding labels to evaluate in different downstream tasks, including RR Interval Estimation `rr_interval`, Age Estimation `age`, Gender Classification `gender`, Potassium Abnormality Prediction `flag`, and Arrhythmia Detection `report_label`.
 
-## Prepare checkpoints
+## Prepare Checkpoints
 Download TEMPO and ECG-FM through [Checkpoints](https://drive.google.com/drive/folders/19yAkDf2yFHaWQ0cDp3McuMsFtl1c4aSY?usp=share_link).
 
 ## Installation
