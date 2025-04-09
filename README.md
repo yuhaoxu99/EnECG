@@ -5,11 +5,7 @@ Official code for "EnECG: Efficient Ensemble Learning for Electrocardiogram Mult
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/yuhaoxu99/EnECG/main/img/EnECG.png" alt="architecture" width="500"/>
-  <p><i>Figure 1: The framework of EnECG. The EnECG framework comprises three main steps.<br><br>
-  (1) Each pretrained foundation model (M₁, M₂, ..., Mₙ) requires a specific input length, so we downsample the ECG signals and feed them into the frozen models. A feed-forward network (FFN) is added and fine-tuned to obtain (M<sub>ϕ1</sub>, M<sub>ϕ2</sub>, ..., M<sub>ϕₙ</sub>).<br><br>
-  (2) To reduce training costs, a subset of ECG leads is selected and fed into a Mixture of Experts (MoE), which outputs gating probabilities W.<br><br>
-  (3) Finally, the results are ensembled via a weighted sum: ŷ = ∑<sub>i=1</sub><sup>N</sup> W<sub>i</sub> ŷ<sub>i</sub>.
-  </i></p>
+  <p><i>Figure 1: The framework of EnECG.</i></p>
 </div>
 
 ## Prepare Dataset
