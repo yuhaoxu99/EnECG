@@ -1,5 +1,5 @@
 # EnECG
-Official code for [EnECG: Efficient Ensemble Learning for Electrocardiogram Multi-task Foundation Model](https://www.arxiv.org/abs/2511.22935).
+Official code for "[EnECG: Efficient Ensemble Learning for Electrocardiogram Multi-task Foundation Model](https://www.arxiv.org/abs/2511.22935)".
 
 ## Framework of EnECG
 
